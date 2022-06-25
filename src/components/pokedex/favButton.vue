@@ -16,7 +16,7 @@ function toggleFav(e) {
     if (!prop.pokemon.isFav) {
         prop.pokemon.isFav = true
         useLocalstorage('fav-' + prop.pokemon.id, prop.pokemon)
-        //favPokemons.value.push(prop.pokemon)
+        favPokemons.value.push(prop.pokemon)
         console.log(favPokemons)
     }
     else {
