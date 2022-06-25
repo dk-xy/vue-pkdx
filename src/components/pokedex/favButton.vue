@@ -21,7 +21,8 @@ function toggleFav(e) {
     }
     else {
         prop.pokemon.isFav = false
-        localStorage.removeItem('fav-' + prop.pokemon.id)
+        let string = 'fav-' + prop.pokemon.id
+        localStorage.removeItem(string)
         let index = -1;
         favPokemons.value.forEach(pkmn => {
             index++;
@@ -30,6 +31,7 @@ function toggleFav(e) {
             } 
         });
     }
+    //pb ici à corriger
     let keys = Object.keys(localStorage);
     console.log(keys)
     keys.forEach(fav => {

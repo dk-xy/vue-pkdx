@@ -24,4 +24,5 @@ export const onAbout = computed(()=>{
     value: favourites
 } = useLocalstorage('favourites', {});
 
+
 export const favPokemons = ref([]);

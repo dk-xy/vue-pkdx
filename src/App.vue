@@ -29,7 +29,7 @@ import favs from './components/favourites/allFavs.vue';
 
 
 <!-- Pokedex ---------------------->
-<div v-show="onFav" class="favourites">
+<div v-if="onFav" class="favourites">
 <favs></favs>
 
 </div>
