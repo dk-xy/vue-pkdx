@@ -27,6 +27,13 @@ function loadGen(e) {
             break;
         case e.target.classList.contains('two'):
             limit.value = '?limit=100&offset=151'
+            break;
+        case e.target.classList.contains('three'):
+            limit.value = '?limit=135&offset=251'
+            break;
+        case e.target.classList.contains('four'):
+            limit.value = '?limit=107&offset=386'
+            break;
         default:
             break;
     }
@@ -82,6 +89,8 @@ function loadGen(e) {
         <div class="pkdxTitle">Pokédex</div>
         <button class="gen one" @click="loadGen($event)">First Gen</button>
         <button class="gen two" @click="loadGen($event)">Second Gen</button>
+        <button class="gen three" @click="loadGen($event)">Third Gen</button>
+        <button class="gen four" @click="loadGen($event)">Fourth Gen</button>
     </div>
     <div class="loader">
         <div class="allPokemons">
@@ -101,7 +110,7 @@ function loadGen(e) {
     gap: 20px;
 }
 
-.inputSection{
+.inputSection {
     height: 100px;
     text-align: center;
     background-color: #202020;
@@ -109,29 +118,30 @@ function loadGen(e) {
     margin-bottom: 20px;
 }
 
-.inputSection button{
-  background-color: transparent;
-  border: none;
-  border: 3px solid red;
-  color: white;
-  font-weight: 800;
-  padding: 7px 14px 7px 14px;
-  margin: 20px;
-  border-radius: 5%;
-}
-
-.inputSection button:hover{
-transition: 0.5s;
-
- background-color: red;
-}
- 
- .pkdxTitle{
-   font-size: 24px;
+.inputSection button {
+    background-color: transparent;
+    border: none;
+    border: 3px solid red;
     color: white;
     font-weight: 800;
-    margin-right: 20px;;
- }
+    padding: 7px 14px 7px 14px;
+    margin: 20px;
+    border-radius: 5%;
+}
+
+.inputSection button:hover {
+    transition: 0.5s;
+
+    background-color: red;
+}
+
+.pkdxTitle {
+    font-size: 24px;
+    color: white;
+    font-weight: 800;
+    margin-right: 20px;
+    ;
+}
 
 .fetch-loader {
     position: absolute;
