@@ -35,6 +35,7 @@
     margin:-20px 0px 0px 0px;
     padding-bottom: 100px;
     color: white;
+    
 }
 
 

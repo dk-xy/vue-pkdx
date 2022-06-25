@@ -1,5 +1,5 @@
 import { ref, computed } from 'vue';
-export const page = ref('pkdx');
+export const page = ref('#pkdx');
 
 export const onAbout = computed(()=>{
     return page.value === '#about'

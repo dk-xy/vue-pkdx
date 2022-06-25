@@ -5,6 +5,7 @@ import about from'./components/about.vue';
 import { onAbout, onPkdx } from './transit.js';
 import InputPokedex from './components/pokedex/inputPokedex.vue';
 
+
 </script>
 
 <template>
@@ -16,6 +17,7 @@ import InputPokedex from './components/pokedex/inputPokedex.vue';
 <!-- Pokedex ---------------------->
 <div v-if="onPkdx" class="pokedex">
 <InputPokedex></InputPokedex>
+
 </div>
 <!--------------------------------->
 

@@ -44,26 +44,26 @@ nav {
 
 }
 
-ul {
+nav ul {
 
     padding: 40px 60px 40px 40px;
 
 }
 
-li {
+nav li {
     display: inline;
     padding: 20px 30px 20px 30px;
     color: white;
 }
 
-li a {
+nav li a {
     color: white !important;
     text-decoration: none;
     padding: 20px 30px 20px 30px;
     font-weight: 800;
 }
 
-li:hover {
+nav li:hover {
     background-color: rgb(236, 0, 0, 0.8);
     transition: 0.5s;
 }
