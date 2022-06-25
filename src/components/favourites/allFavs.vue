@@ -21,7 +21,10 @@ console.log(favPokemons)
 </script>
 
 <template>
-    Favs
+    <div class="inputSection">
+        <span class="favTitle">Favorites</span>
+        <button class="gen one">Reset</button>
+    </div>
 
     <div class="allPokemons">
         <div class="pokemon" v-for="pokemon in favPokemons">
@@ -31,4 +34,9 @@ console.log(favPokemons)
 </template>
 
 <style>
+.favTitle{
+    font-size: 24px;
+    color: white;
+    font-weight: 800;
+}
 </style>
