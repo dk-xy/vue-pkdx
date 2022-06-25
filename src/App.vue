@@ -2,25 +2,38 @@
 
 import headerVue from './components/header.vue';
 import about from'./components/about.vue';
-import { onAbout, onPkdx } from './transit.js';
+import { onAbout, onPkdx, onFav } from './transit.js';
 import InputPokedex from './components/pokedex/inputPokedex.vue';
+import favs from './components/favourites/allFavs.vue';
 
 
 </script>
 
 <template>
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+
 <!-- Header ---------------------->
 <headerVue></headerVue>
 <!--------------------------------->
 
 
 <!-- Pokedex ---------------------->
-<div v-if="onPkdx" class="pokedex">
+<div v-show="onPkdx" class="pokedex">
 <InputPokedex></InputPokedex>
 
 </div>
 <!--------------------------------->
 
+
+<!-- Pokedex ---------------------->
+<div v-show="onFav" class="favourites">
+<favs></favs>
+
+</div>
+<!--------------------------------->
 
 <!-- About ---------------------->
 <about v-if="onAbout"></about>

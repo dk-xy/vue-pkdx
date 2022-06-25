@@ -1,5 +1,5 @@
 <script setup>
-import onePokemon from './onePokemon.vue';
+
 </script>
 
 <template>
